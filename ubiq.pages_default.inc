@@ -807,28 +807,6 @@ function ubiq_default_page_manager_pages() {
     $display->content['new-38d25955-b0b8-4e5f-8005-9f22b0f50c4f'] = $pane;
     $display->panels['top'][0] = 'new-38d25955-b0b8-4e5f-8005-9f22b0f50c4f';
     $pane = new stdClass();
-    $pane->pid = 'new-15b644b0-35fd-40fb-87d6-8399245019a1';
-    $pane->panel = 'top';
-    $pane->type = 'block';
-    $pane->subtype = 'nodeblock-57';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '15b644b0-35fd-40fb-87d6-8399245019a1';
-    $display->content['new-15b644b0-35fd-40fb-87d6-8399245019a1'] = $pane;
-    $display->panels['top'][1] = 'new-15b644b0-35fd-40fb-87d6-8399245019a1';
-    $pane = new stdClass();
     $pane->pid = 'new-349690bd-6887-4629-a39f-4a4d83a368a4';
     $pane->panel = 'top';
     $pane->type = 'views';
@@ -857,11 +835,11 @@ function ubiq_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '349690bd-6887-4629-a39f-4a4d83a368a4';
     $display->content['new-349690bd-6887-4629-a39f-4a4d83a368a4'] = $pane;
-    $display->panels['top'][2] = 'new-349690bd-6887-4629-a39f-4a4d83a368a4';
+    $display->panels['top'][1] = 'new-349690bd-6887-4629-a39f-4a4d83a368a4';
     $pane = new stdClass();
     $pane->pid = 'new-fec092b6-3ba1-463e-bd8b-476d7c25c135';
     $pane->panel = 'top';
@@ -891,11 +869,11 @@ function ubiq_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = 'fec092b6-3ba1-463e-bd8b-476d7c25c135';
     $display->content['new-fec092b6-3ba1-463e-bd8b-476d7c25c135'] = $pane;
-    $display->panels['top'][3] = 'new-fec092b6-3ba1-463e-bd8b-476d7c25c135';
+    $display->panels['top'][2] = 'new-fec092b6-3ba1-463e-bd8b-476d7c25c135';
     $pane = new stdClass();
     $pane->pid = 'new-41488be5-5ce9-41e8-b39e-5974b870a9a5';
     $pane->panel = 'top';
@@ -925,11 +903,11 @@ function ubiq_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = '41488be5-5ce9-41e8-b39e-5974b870a9a5';
     $display->content['new-41488be5-5ce9-41e8-b39e-5974b870a9a5'] = $pane;
-    $display->panels['top'][4] = 'new-41488be5-5ce9-41e8-b39e-5974b870a9a5';
+    $display->panels['top'][3] = 'new-41488be5-5ce9-41e8-b39e-5974b870a9a5';
     $pane = new stdClass();
     $pane->pid = 'new-13e6ee5d-6878-48b6-a6f5-404b5999579b';
     $pane->panel = 'top';
@@ -959,11 +937,11 @@ function ubiq_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 4;
     $pane->locks = array();
     $pane->uuid = '13e6ee5d-6878-48b6-a6f5-404b5999579b';
     $display->content['new-13e6ee5d-6878-48b6-a6f5-404b5999579b'] = $pane;
-    $display->panels['top'][5] = 'new-13e6ee5d-6878-48b6-a6f5-404b5999579b';
+    $display->panels['top'][4] = 'new-13e6ee5d-6878-48b6-a6f5-404b5999579b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-38d25955-b0b8-4e5f-8005-9f22b0f50c4f';
   $handler->conf['display'] = $display;

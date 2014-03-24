@@ -370,6 +370,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_class'] = 'akbar';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Quote By */
   $handler->display->display_options['fields']['field_quote_by']['id'] = 'field_quote_by';

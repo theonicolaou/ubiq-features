@@ -396,7 +396,10 @@ function ubiq_default_page_manager_pages() {
   $page->admin_title = 'Case Studies';
   $page->admin_description = '';
   $page->path = 'case-studies';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array(
     'type' => 'none',
     'title' => '',
@@ -598,7 +601,10 @@ function ubiq_default_page_manager_pages() {
   $page->admin_title = 'Home page';
   $page->admin_description = '';
   $page->path = 'home';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -972,7 +978,10 @@ function ubiq_default_page_manager_pages() {
   $page->admin_title = 'News';
   $page->admin_description = '';
   $page->path = 'news';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -1134,6 +1143,8 @@ function ubiq_default_page_manager_pages() {
   $page->access = array(
     'plugins' => array(),
     'logic' => 'and',
+    'type' => 'none',
+    'settings' => NULL,
   );
   $page->menu = array(
     'type' => 'none',
@@ -1274,7 +1285,10 @@ function ubiq_default_page_manager_pages() {
   $page->admin_title = 'Video Gallery';
   $page->admin_description = '';
   $page->path = 'video-gallery';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

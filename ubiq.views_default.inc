@@ -1218,31 +1218,43 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '[field_icon] [title]';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Bullet Points */
+  $handler->display->display_options['fields']['field_bullet_points']['id'] = 'field_bullet_points';
+  $handler->display->display_options['fields']['field_bullet_points']['table'] = 'field_data_field_bullet_points';
+  $handler->display->display_options['fields']['field_bullet_points']['field'] = 'field_bullet_points';
+  $handler->display->display_options['fields']['field_bullet_points']['label'] = '';
+  $handler->display->display_options['fields']['field_bullet_points']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_bullet_points']['alter']['max_length'] = '90';
+  $handler->display->display_options['fields']['field_bullet_points']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['field_bullet_points']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_bullet_points']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_bullet_points']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_bullet_points']['multi_type'] = 'ul';
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
+  $handler->display->display_options['fields']['field_featured_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '<div class="row">
+<div class="large-7 columns">[field_featured_image]</div>
+<div class="large-5 columns">
+<div class="row">
+<div class="large-12 columns"><h1>[field_icon] [title]</h1></div>
+</div>
+[field_bullet_points]</div>
+</div>';
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Bullet Points */
-  $handler->display->display_options['fields']['field_bullet_points']['id'] = 'field_bullet_points';
-  $handler->display->display_options['fields']['field_bullet_points']['table'] = 'field_data_field_bullet_points';
-  $handler->display->display_options['fields']['field_bullet_points']['field'] = 'field_bullet_points';
-  $handler->display->display_options['fields']['field_bullet_points']['label'] = '';
-  $handler->display->display_options['fields']['field_bullet_points']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_bullet_points']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_bullet_points']['multi_type'] = 'ul';
   /* Field: Content: Related Campaign */
   $handler->display->display_options['fields']['field_related_capmpaign']['id'] = 'field_related_capmpaign';
   $handler->display->display_options['fields']['field_related_capmpaign']['table'] = 'field_data_field_related_capmpaign';

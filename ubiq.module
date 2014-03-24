@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ubiq feature.
+ */
+
+include_once 'ubiq.features.inc';

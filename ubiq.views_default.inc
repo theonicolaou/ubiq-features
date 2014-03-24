@@ -1272,7 +1272,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['arguments']['null']['field'] = 'null';
   $handler->display->display_options['arguments']['null']['default_action'] = 'default';
   $handler->display->display_options['arguments']['null']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'doors';
+  $handler->display->display_options['arguments']['null']['default_argument_options']['argument'] = 'liveries';
   $handler->display->display_options['arguments']['null']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['null']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['null']['summary_options']['items_per_page'] = '25';
@@ -1285,7 +1285,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['arguments']['title']['field'] = 'title';
   $handler->display->display_options['arguments']['title']['default_action'] = 'default';
   $handler->display->display_options['arguments']['title']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['title']['default_argument_options']['argument'] = 'doors';
+  $handler->display->display_options['arguments']['title']['default_argument_options']['argument'] = 'liveries';
   $handler->display->display_options['arguments']['title']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['title']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['title']['summary_options']['items_per_page'] = '25';

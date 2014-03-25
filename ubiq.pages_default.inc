@@ -1375,7 +1375,7 @@ function ubiq_default_page_manager_pages() {
     $pane->uuid = 'ec066276-5860-4939-9c85-1340c65ff06e';
     $display->content['new-ec066276-5860-4939-9c85-1340c65ff06e'] = $pane;
     $display->panels['top'][0] = 'new-ec066276-5860-4939-9c85-1340c65ff06e';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

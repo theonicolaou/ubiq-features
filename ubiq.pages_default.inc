@@ -1029,7 +1029,7 @@ function ubiq_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'taxi advertising news - whats new outdoors';
+  $display->title = '';
   $display->uuid = 'e9723dc0-dc75-42c1-8040-eb4190785eac';
   $display->content = array();
   $display->panels = array();
@@ -1135,7 +1135,7 @@ function ubiq_default_page_manager_pages() {
     $pane->uuid = 'c17eaea9-66cd-4bed-80c5-f542b278cb59';
     $display->content['new-c17eaea9-66cd-4bed-80c5-f542b278cb59'] = $pane;
     $display->panels['top'][0] = 'new-c17eaea9-66cd-4bed-80c5-f542b278cb59';
-  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;

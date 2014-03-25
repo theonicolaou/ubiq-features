@@ -30,7 +30,6 @@ function ubiq_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Carousel Image (landing page) */
   $handler->display->display_options['fields']['field_carousel_image']['id'] = 'field_carousel_image';
@@ -38,7 +37,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['field_carousel_image']['field'] = 'field_carousel_image';
   $handler->display->display_options['fields']['field_carousel_image']['label'] = '';
   $handler->display->display_options['fields']['field_carousel_image']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_carousel_image']['alter']['text'] = '[field_carousel_image] ';
+  $handler->display->display_options['fields']['field_carousel_image']['alter']['text'] = '[field_carousel_image]';
   $handler->display->display_options['fields']['field_carousel_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_carousel_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_carousel_image']['settings'] = array(
@@ -373,7 +372,6 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_class'] = 'akbar';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Quote By */
   $handler->display->display_options['fields']['field_quote_by']['id'] = 'field_quote_by';

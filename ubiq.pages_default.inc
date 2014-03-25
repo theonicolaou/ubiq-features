@@ -942,6 +942,37 @@ function ubiq_default_page_manager_pages() {
     $pane->uuid = '13e6ee5d-6878-48b6-a6f5-404b5999579b';
     $display->content['new-13e6ee5d-6878-48b6-a6f5-404b5999579b'] = $pane;
     $display->panels['top'][4] = 'new-13e6ee5d-6878-48b6-a6f5-404b5999579b';
+    $pane = new stdClass();
+    $pane->pid = 'new-34898d75-9f75-49aa-a8a9-cbeacd6c5c7f';
+    $pane->panel = 'top';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'admin_title' => '',
+      'title' => '',
+      'body' => '<ul data-orbit>
+<li><img src="http://placehold.it/350x150" /></li>
+<li><img src="http://placehold.it/350x150" /></li>
+<li><img src="http://placehold.it/350x150" /></li>
+<li><img src="http://placehold.it/350x150" /></li>
+</ul>
+',
+      'format' => 'full_html',
+      'substitute' => TRUE,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '34898d75-9f75-49aa-a8a9-cbeacd6c5c7f';
+    $display->content['new-34898d75-9f75-49aa-a8a9-cbeacd6c5c7f'] = $pane;
+    $display->panels['top'][5] = 'new-34898d75-9f75-49aa-a8a9-cbeacd6c5c7f';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-38d25955-b0b8-4e5f-8005-9f22b0f50c4f';
   $handler->conf['display'] = $display;

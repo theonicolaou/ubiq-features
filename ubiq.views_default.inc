@@ -687,7 +687,7 @@ function ubiq_views_default_views() {
       'rendered' => 1,
       'rendered_strip' => 1,
       'grouping-limit' => array(
-        'grouping-limit' => '4',
+        'grouping-limit' => '1',
         'grouping-offset' => '0',
       ),
     ),
@@ -1271,12 +1271,23 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
   $handler->display->display_options['fields']['field_featured_image']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_featured_image']['alter']['text'] = '<div class="row">
+
 <div class="large-7 columns">[field_featured_image]</div>
+
 <div class="large-5 columns">
+
 <div class="row">
-<div class="large-12 columns"><h1>[field_icon] [title]</h1></div>
+<div class="large-12 columns"><h1 class="component-title">[field_icon] [title]</h1></div>
 </div>
-<ul class="taxi-formats-bullets">[field_bullet_points]</li></div>
+
+<div class="row">
+<div class="large-12 columns">
+<ul class="taxi-formats-bullets">[field_bullet_points]</li></ul>
+</div>
+</div>
+
+</div>
+
 </div>';
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
@@ -1363,25 +1374,21 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Video */
   $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
   $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['label'] = '';
+  $handler->display->display_options['fields']['field_video']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'input';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'youtube_size' => 'custom',
+    'youtube_size' => 'responsive',
     'youtube_width' => '575',
     'youtube_height' => '350',
     'youtube_autoplay' => 0,
@@ -1390,6 +1397,32 @@ function ubiq_views_default_views() {
     'youtube_autohide' => 0,
     'youtube_iv_load_policy' => 1,
   );
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['text'] = '<div class="row">
+
+<div class="large-7 columns">[field_video]</div>
+
+<div class="large-5 columns">
+
+<div class="row">
+<div class="large-12 columns"><h1 class="component-title">[title]</h1></div>
+</div>
+
+<div class="row">
+<div class="large-12 columns">[body]</div>
+</div>
+
+</div>
+
+</div>';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

@@ -1287,6 +1287,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h1';
+  $handler->display->display_options['fields']['title']['element_class'] = 'component-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Bullet Points */
@@ -1297,6 +1298,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['field_bullet_points']['alter']['max_length'] = '90';
   $handler->display->display_options['fields']['field_bullet_points']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['field_bullet_points']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_bullet_points']['element_class'] = 'taxi-formats-bullets';
   $handler->display->display_options['fields']['field_bullet_points']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_bullet_points']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_bullet_points']['multi_type'] = 'ul';

@@ -606,29 +606,44 @@ function ubiq_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['layout'] = 'ubiq_four_eight';
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_featured_image' => 'left',
+    'title' => 'right',
+    'body' => 'right',
+    'field_link' => 'right',
+    'field_link_button_label' => 'right',
+  );
   /* Field: Content: Featured Image */
   $handler->display->display_options['fields']['field_featured_image']['id'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['table'] = 'field_data_field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['field'] = 'field_featured_image';
   $handler->display->display_options['fields']['field_featured_image']['label'] = '';
-  $handler->display->display_options['fields']['field_featured_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
     'image_style' => '',
     'image_link' => 'content',
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_class'] = 'component-title';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
   $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
@@ -641,40 +656,12 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['field_link_button_label']['table'] = 'field_data_field_link_button_label';
   $handler->display->display_options['fields']['field_link_button_label']['field'] = 'field_link_button_label';
   $handler->display->display_options['fields']['field_link_button_label']['label'] = '';
-  $handler->display->display_options['fields']['field_link_button_label']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_link_button_label']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_link_button_label']['alter']['path'] = '[field_link]';
   $handler->display->display_options['fields']['field_link_button_label']['alter']['replace_spaces'] = TRUE;
   $handler->display->display_options['fields']['field_link_button_label']['alter']['path_case'] = 'lower';
+  $handler->display->display_options['fields']['field_link_button_label']['alter']['link_class'] = 'generic-promotion-link-button-label';
   $handler->display->display_options['fields']['field_link_button_label']['element_label_colon'] = FALSE;
-  /* Field: Content: Body */
-  $handler->display->display_options['fields']['body']['id'] = 'body';
-  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
-  $handler->display->display_options['fields']['body']['field'] = 'body';
-  $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['text'] = '<div class="row">
-
-<div class="large-3 columns">[field_featured_image]</div>
-
-<div class="large-9 columns">
-
-<div class="row">
-<div class="large-12 columns">
-<h2 class="component-title">[title]</h2>
-</div>
-<div class="large-12 columns">
-[body]
-</div>
-<div class="large-12 columns generic-promotion-link-button-label">
-[field_link_button_label]
-</div>
-</div>
-
-</div>
-
-</div>';
-  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -1294,9 +1281,10 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['text'] = '[field_icon] [title]';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h1';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_class'] = 'component-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Bullet Points */
   $handler->display->display_options['fields']['field_bullet_points']['id'] = 'field_bullet_points';

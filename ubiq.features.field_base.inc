@@ -34,10 +34,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'text_with_summary',
   );
@@ -64,10 +61,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
   );
@@ -97,8 +91,6 @@ function ubiq_field_default_field_bases() {
     'settings' => array(
       'default_image' => 31,
       'uri_scheme' => 'public',
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
@@ -129,8 +121,6 @@ function ubiq_field_default_field_bases() {
     'settings' => array(
       'default_image' => 0,
       'uri_scheme' => 'public',
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
@@ -160,8 +150,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -189,10 +177,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
   );
@@ -226,8 +211,6 @@ function ubiq_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -257,8 +240,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -289,8 +270,6 @@ function ubiq_field_default_field_bases() {
     'settings' => array(
       'default_image' => 0,
       'uri_scheme' => 'public',
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
@@ -320,8 +299,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 50,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -352,8 +329,6 @@ function ubiq_field_default_field_bases() {
     'settings' => array(
       'default_image' => 0,
       'uri_scheme' => 'public',
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
@@ -384,8 +359,6 @@ function ubiq_field_default_field_bases() {
     'settings' => array(
       'default_image' => 0,
       'uri_scheme' => 'public',
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'image',
@@ -415,8 +388,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -446,8 +417,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 25,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -482,8 +451,6 @@ function ubiq_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -513,8 +480,6 @@ function ubiq_field_default_field_bases() {
     'module' => 'text',
     'settings' => array(
       'max_length' => 255,
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'text',
@@ -542,10 +507,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
   );
@@ -589,8 +551,6 @@ function ubiq_field_default_field_bases() {
         'display_name' => '',
         'view_name' => '',
       ),
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'node_reference',
@@ -618,10 +578,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'text_long',
   );
@@ -664,8 +621,6 @@ function ubiq_field_default_field_bases() {
         'display_name' => '',
         'view_name' => '',
       ),
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'node_reference',
@@ -700,8 +655,6 @@ function ubiq_field_default_field_bases() {
           'parent' => 0,
         ),
       ),
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
@@ -722,10 +675,7 @@ function ubiq_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'youtube',
-    'settings' => array(
-      'views_base_columns' => array(),
-      'views_base_table' => FALSE,
-    ),
+    'settings' => array(),
     'translatable' => 0,
     'type' => 'youtube',
   );

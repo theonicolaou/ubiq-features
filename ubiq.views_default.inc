@@ -1257,7 +1257,15 @@ function ubiq_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['layout'] = 'ubiq_seven_five';
+  $handler->display->display_options['row_options']['regions'] = array(
+    'field_icon' => 'right',
+    'title' => 'right',
+    'field_bullet_points' => 'right',
+    'field_featured_image' => 'left',
+    'field_related_capmpaign' => 'right',
+  );
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
   $handler->display->display_options['empty']['area']['table'] = 'views';
@@ -1386,15 +1394,22 @@ function ubiq_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '1';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_plugin'] = 'panels_fields';
+  $handler->display->display_options['row_options']['layout'] = 'ubiq_seven_five';
+  $handler->display->display_options['row_options']['regions'] = array(
+    'title' => 'right',
+    'field_video' => 'left',
+    'body' => 'right',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_type'] = 'h2';
+  $handler->display->display_options['fields']['title']['element_class'] = 'component-title';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Video */
@@ -1402,7 +1417,6 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
   $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
   $handler->display->display_options['fields']['field_video']['label'] = '';
-  $handler->display->display_options['fields']['field_video']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'input';
   $handler->display->display_options['fields']['field_video']['settings'] = array(
@@ -1420,27 +1434,13 @@ function ubiq_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
-  $handler->display->display_options['fields']['body']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['body']['alter']['text'] = '<div class="row">
-
-<div class="large-7 columns">[field_video]</div>
-
-<div class="large-5 columns">
-
-<div class="row">
-<div class="large-12 columns"><h1 class="component-title">[title]</h1></div>
-</div>
-
-<div class="row">
-<div class="large-12 columns">[body]</div>
-</div>
-
-</div>
-
-</div>';
   $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['body']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '400',
+  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';

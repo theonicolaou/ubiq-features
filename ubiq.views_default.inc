@@ -211,7 +211,7 @@ function ubiq_views_default_views() {
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Gallery Images */
   $handler->display->display_options['fields']['field_gallery_images']['id'] = 'field_gallery_images';
@@ -224,6 +224,7 @@ function ubiq_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
+  $handler->display->display_options['fields']['field_gallery_images']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_gallery_images']['delta_offset'] = '0';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';

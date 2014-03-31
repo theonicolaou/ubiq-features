@@ -31,6 +31,10 @@ function ubiq_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['inline'] = array(
+    'field_carousel_image' => 'field_carousel_image',
+    'field_client_name' => 'field_client_name',
+  );
   /* Field: Content: Carousel Image (landing page) */
   $handler->display->display_options['fields']['field_carousel_image']['id'] = 'field_carousel_image';
   $handler->display->display_options['fields']['field_carousel_image']['table'] = 'field_data_field_carousel_image';
@@ -44,6 +48,12 @@ function ubiq_views_default_views() {
     'image_style' => '',
     'image_link' => 'content',
   );
+  /* Field: Content: Client Name */
+  $handler->display->display_options['fields']['field_client_name']['id'] = 'field_client_name';
+  $handler->display->display_options['fields']['field_client_name']['table'] = 'field_data_field_client_name';
+  $handler->display->display_options['fields']['field_client_name']['field'] = 'field_client_name';
+  $handler->display->display_options['fields']['field_client_name']['label'] = '';
+  $handler->display->display_options['fields']['field_client_name']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
